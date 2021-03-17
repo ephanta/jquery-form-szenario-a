@@ -12,13 +12,19 @@
         <form id="form">
           <div class="gender">
             <p class="label">Geschlecht</p>
-            <input type="radio" id="male" name="gender" value="male" required />
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="Männlich"
+              required
+            />
             <label for="male">Männlich</label>
             <input
               type="radio"
               id="female"
               name="gender"
-              value="female"
+              value="Weiblich"
               required
             />
             <label for="female">Weiblich</label>
@@ -26,11 +32,10 @@
               type="radio"
               id="other"
               name="gender"
-              value="other"
+              value="Divers"
               required
             />
             <label for="other">Divers</label>
-            <input type="hidden" id="gender" value="" />
           </div>
           <div class="name">
             <p class="label">Name</p>
@@ -133,30 +138,26 @@
             </select>
           </div>
           <div class="color">
-            <p class="label">Farbauswahl</p>
+            <p class="label">Farbauswahl:</p>
             <div class="check">
               <input type="checkbox" id="color1" name="color1" value="color1" />
               <label for="color1"> Farbe 1</label>
-              <input type="hidden" id="color1val" value="" />
             </div>
             <div class="check">
               <input type="checkbox" id="color2" name="color2" value="color2" />
               <label for="color2"> Farbe 2</label>
-              <input type="hidden" id="color2val" value="" />
             </div>
             <div class="check">
               <input type="checkbox" id="color3" name="color3" value="color3" />
               <label for="color3"> Farbe 3</label>
-              <input type="hidden" id="color3val" value="" />
             </div>
             <div class="check">
               <input type="checkbox" id="color4" name="color4" value="color4" />
               <label for="color4"> Farbe 4</label>
-              <input type="hidden" id="color4val" value="" />
             </div>
           </div>
           <div class="comment">
-            <p class="label">Anmerkung</p>
+            <p class="label">Anmerkung:</p>
             <textarea id="cmment" name="comment" required></textarea>
           </div>
           <input type="submit" value="Senden" />
@@ -165,34 +166,55 @@
 
       <div class="right answers">
         <div class="gender">
-          <p class="label">Geschlecht: <span class="answer"></span></p>
+          <p class="label">Geschlecht: <span class="answer gender"></span></p>
         </div>
         <div class="name">
-          <p class="label">Name: <span class="answer"></span></p>
+          <p class="label">Name: <span class="answer name"></span></p>
         </div>
         <div class="birthdate">
           <p class="label">
             Geburtsdatum: <span class="answer day"></span
-            ><span class="answer month"></span><span class="answer year"></span>
+            ><span class="answer month"> </span
+            ><span class="answer year"></span>
           </p>
         </div>
         <div class="color">
-          <p class="label">Farbauswahl</p>
+          <p class="label">Farbauswahl:</p>
           <div class="check">
-            <input type="checkbox" id="color1" name="color1" value="color1" />
+            <input
+              type="checkbox"
+              class="answer color1"
+              name="color1"
+              value="color1"
+            />
           </div>
           <div class="check">
-            <input type="checkbox" id="color2" name="color2" value="color2" />
+            <input
+              type="checkbox"
+              class="answer color2"
+              name="color2"
+              value="color2"
+            />
           </div>
           <div class="check">
-            <input type="checkbox" id="color3" name="color3" value="color3" />
+            <input
+              type="checkbox"
+              class="answer color3"
+              name="color3"
+              value="color3"
+            />
           </div>
           <div class="check">
-            <input type="checkbox" id="color4" name="color4" value="color4" />
+            <input
+              type="checkbox"
+              class="answer color4"
+              name="color4"
+              value="color4"
+            />
           </div>
           <div class="comment">
-            <p class="label">Anmerkung</p>
-            <span class="answer"></span>
+            <p class="label">Anmerkung:</p>
+            <span class="answer comment"></span>
           </div>
         </div>
       </div>

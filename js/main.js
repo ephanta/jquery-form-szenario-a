@@ -11,34 +11,34 @@ $(document).ready(function () {
     for (var i = 0; i < dataArray.length; i++) {
       if (dataArray[i].name === "gender") {
         var gender = dataArray[i].value;
-        $(".answers .gender .answer").html(gender);
+        $(".answers .answer.gender").html(gender);
       } else if (dataArray[i].name === "name") {
         var name = dataArray[i].value;
-        $(".answers .name .answer").html(name);
+        $(".answers .answer.name").html(name);
       } else if (dataArray[i].name === "day") {
         var day = dataArray[i].value;
-        $(".answers .day.answer").html(day + ". ");
+        $(".answers .answer.day").html(day + ". ");
       } else if (dataArray[i].name === "month") {
         var month = dataArray[i].value;
-        $(".answers .month.answer").html(month);
+        $(".answers .answer.month").html(month + " ");
       } else if (dataArray[i].name === "year") {
         var year = dataArray[i].value;
-        $(".answers .year.answer").html(year);
+        $(".answers .answer.year").html(year);
       } else if (dataArray[i].name === "color1") {
         var color1 = dataArray[i].value;
-        $(".answers #" + color1).prop("checked", true);
+        $(".answers .answer." + color1).prop("checked", true);
       } else if (dataArray[i].name === "color2") {
         var color2 = dataArray[i].value;
-        $(".answers #" + color2).prop("checked", true);
+        $(".answers .answer." + color2).prop("checked", true);
       } else if (dataArray[i].name === "color3") {
         var color3 = dataArray[i].value;
-        $(".answers #" + color3).prop("checked", true);
+        $(".answers .answer." + color3).prop("checked", true);
       } else if (dataArray[i].name === "color4") {
         var color4 = dataArray[i].value;
-        $(".answers #" + color4).prop("checked", true);
+        $(".answers .answer." + color4).prop("checked", true);
       } else if (dataArray[i].name === "comment") {
         comment = dataArray[i].value;
-        $(".answers .comment .answer").html(comment);
+        $(".answers .answer.comment ").html(comment);
       }
     }
   });
