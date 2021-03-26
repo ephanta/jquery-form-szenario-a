@@ -14,22 +14,12 @@ $(document).ready(function () {
       } else if (dataArray[i].name === "month") {
         var month = dataArray[i].value;
         $(".answers .answer.month").html(month + " ");
-      } else if (dataArray[i].name === "color1") {
-        var color1 = dataArray[i].value;
-        $(".answers .answer." + color1).prop("checked", true);
-      } else if (dataArray[i].name === "color2") {
-        var color2 = dataArray[i].value;
-        $(".answers .answer." + color2).prop("checked", true);
-      } else if (dataArray[i].name === "color3") {
-        var color3 = dataArray[i].value;
-        $(".answers .answer." + color3).prop("checked", true);
-      } else if (dataArray[i].name === "color4") {
-        var color4 = dataArray[i].value;
-        $(".answers .answer." + color4).prop("checked", true);
+      } else if (dataArray[i].name === "color1" || dataArray[i].name === "color2" || dataArray[i].name === "color3" || dataArray[i].name === "color4") {
+        var color = dataArray[i].value;
+        $(".answers .answer." + color).prop("checked", true);
       } else{
         var val = dataArray[i].value;
         $(".answers .answer." + dataArray[i].name).html(val);
-        console.log(val);
       }
     }
   });
